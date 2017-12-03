@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VaC-ua-GGp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rest Eyes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Time2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="yv6-vX-vaP">
+                                <rect key="frame" x="0.0" y="143" width="375" height="258"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q0-aa-qWd">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" red="0.92941176470588238" green="0.0" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zu-NN-tST">
+                                        <rect key="frame" x="0.0" y="204" width="375" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" red="0.92941176469999998" green="0.0" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ControlButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D0H-ai-2Md"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yv6-vX-vaP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0NM-WA-gbv"/>
+                            <constraint firstItem="yv6-vX-vaP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Xd-c2-Gzy"/>
+                            <constraint firstItem="yv6-vX-vaP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="123" id="HJ3-Fg-wXs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rest Eyes" image="finaleyes50red" selectedImage="finaleyes50red" id="vdO-i7-DHo"/>
+                    <connections>
+                        <outlet property="ControlButton" destination="7Zu-NN-tST" id="W8A-Ur-kWf"/>
+                        <outlet property="Display" destination="6q0-aa-qWd" id="dxV-hm-Vp8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="43.628185907046479"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2on-zc-DlC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VaC-ua-GGp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4o8-SL-nMx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="THt-0z-mAW"/>
+                        <segue destination="23q-fP-e6X" kind="relationship" relationship="viewControllers" id="L1V-Nj-gCo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7K-0m-uvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="43.628185907046479"/>
+        </scene>
+        <!--Set Timings-->
+        <scene sceneID="85O-1N-1Jr">
+            <objects>
+                <viewController id="23q-fP-e6X" customClass="setTimings" customModule="Time2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1vS-1l-Qab"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFt-FU-NNL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2IV-Sf-IzP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="yOM-As-Y8G">
+                                <rect key="frame" x="29" y="75" width="313.5" height="271.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="175" translatesAutoresizingMaskIntoConstraints="NO" id="L5w-Hf-Nkn">
+                                        <rect key="frame" x="0.0" y="0.0" width="313.5" height="31.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remainder " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-3i-xbf">
+                                                <rect key="frame" x="0.0" y="5.5" width="86.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.96078431369999995" green="0.066666666669999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M7W-rH-Z4j">
+                                                <rect key="frame" x="264.5" y="0.5" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="OnOffCalled:" destination="23q-fP-e6X" eventType="valueChanged" id="tQ2-hD-dQt"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fyl-sh-gwS">
+                                        <rect key="frame" x="0.0" y="81.5" width="313.5" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raJ-12-yZf">
+                                                <rect key="frame" x="0.0" y="0.0" width="34.5" height="30"/>
+                                                <state key="normal" title="M">
+                                                    <color key="titleColor" red="0.92941176469999998" green="0.0" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ChoseThisDay:" destination="23q-fP-e6X" eventType="touchUpInside" id="mcQ-9u-HbR"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWO-mU-2Ax">
+                                                <rect key="frame" x="46.5" y="0.0" width="34.5" height="30"/>
+                                                <state key="normal" title="T">
+                                                    <color key="titleColor" red="0.96078431369999995" green="0.066666666669999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ChoseThisDay:" destination="23q-fP-e6X" eventType="touchUpInside" id="OlT-WE-ryq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3X-sP-vcT">
+                                                <rect key="frame" x="93" y="0.0" width="34.5" height="30"/>
+                                                <state key="normal" title="W">
+                                                    <color key="titleColor" red="0.92941176469999998" green="0.0" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ChoseThisDay:" destination="23q-fP-e6X" eventType="touchUpInside" id="E4m-2W-gdN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFc-IE-9fF">
+                                                <rect key="frame" x="139.5" y="0.0" width="34.5" height="30"/>
+                                                <state key="normal" title="Th">
+                                                    <color key="titleColor" red="0.96078431369999995" green="0.066666666669999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ChoseThisDay:" destination="23q-fP-e6X" eventType="touchUpInside" id="zTR-Qo-cQ2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewA-AH-KNq">
+                                                <rect key="frame" x="186" y="0.0" width="34.5" height="30"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" red="0.92941176469999998" green="0.0" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ChoseThisDay:" destination="23q-fP-e6X" eventType="touchUpInside" id="Y4G-L6-HQf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgJ-km-k9Z">
+                                                <rect key="frame" x="232.5" y="0.0" width="34.5" height="30"/>
+                                                <state key="normal" title="S">
+                                                    <color key="titleColor" red="0.96078431369999995" green="0.066666666669999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ChoseThisDay:" destination="23q-fP-e6X" eventType="touchUpInside" id="brf-1z-coH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mk-w5-afh">
+                                                <rect key="frame" x="279" y="0.0" width="34.5" height="30"/>
+                                                <state key="normal" title="Su">
+                                                    <color key="titleColor" red="0.92941176469999998" green="0.0" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ChoseThisDay:" destination="23q-fP-e6X" eventType="touchUpInside" id="hkj-e3-swH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Vrn-Lx-s9C">
+                                        <rect key="frame" x="0.0" y="161.5" width="313.5" height="110"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="TMM-NE-auh">
+                                                <rect key="frame" x="0.0" y="0.0" width="313.5" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-WW-7ru">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.96078431369999995" green="0.066666666669999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8:00 AM" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQl-D5-KMC">
+                                                        <rect key="frame" x="182" y="0.0" width="131.5" height="30"/>
+                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="StartTimeSetter:" destination="23q-fP-e6X" eventType="editingDidBegin" id="cAZ-6D-wK9"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-kQ-JiN">
+                                                <rect key="frame" x="0.0" y="80" width="313.5" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeE-Ua-VfM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="0.92941176469999998" green="0.0" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4:00 PM" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DwZ-sO-GkQ">
+                                                        <rect key="frame" x="182" y="0.0" width="131.5" height="30"/>
+                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="EndTimeTeller:" destination="23q-fP-e6X" eventType="editingDidBegin" id="CJt-iz-UMi"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yOM-As-Y8G" firstAttribute="leading" secondItem="2IV-Sf-IzP" secondAttribute="leadingMargin" constant="13" id="5oO-17-S4E"/>
+                            <constraint firstItem="yOM-As-Y8G" firstAttribute="top" secondItem="1vS-1l-Qab" secondAttribute="bottom" constant="55" id="6Q1-fL-ib0"/>
+                            <constraint firstItem="yOM-As-Y8G" firstAttribute="width" secondItem="2IV-Sf-IzP" secondAttribute="height" multiplier="173:368" id="SFa-Qc-drY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="GbM-2Q-O4e"/>
+                    <connections>
+                        <outlet property="Friday" destination="ewA-AH-KNq" id="gpk-JV-ifz"/>
+                        <outlet property="Monday" destination="raJ-12-yZf" id="LCe-aG-1xG"/>
+                        <outlet property="OnOff" destination="M7W-rH-Z4j" id="lqI-Ab-Fx9"/>
+                        <outlet property="Saturday" destination="OgJ-km-k9Z" id="OQR-eV-jTn"/>
+                        <outlet property="Sunday" destination="7mk-w5-afh" id="abu-MN-j0p"/>
+                        <outlet property="Thursday" destination="pFc-IE-9fF" id="hUn-6R-a6c"/>
+                        <outlet property="Tuesday" destination="oWO-mU-2Ax" id="MhT-zS-JAE"/>
+                        <outlet property="Wednesday" destination="W3X-sP-vcT" id="ZnW-WA-nAk"/>
+                        <outlet property="endField" destination="DwZ-sO-GkQ" id="uvI-JB-U2U"/>
+                        <outlet property="startField" destination="BQl-D5-KMC" id="shK-dM-0Zn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3n-Wa-6k8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.80000000000001" y="859.52023988005999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="finaleyes50red" width="93" height="25"/>
+    </resources>
+</document>
